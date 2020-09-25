@@ -13,7 +13,7 @@ import { convert, comma } from 'smash-numbers'
 
 convert(1000) // 1K
 
-comma(1000)
+comma(10000) // 10,000
 ```
 ## Options
 
