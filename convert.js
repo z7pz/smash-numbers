@@ -1,15 +1,16 @@
 "use strict";
 exports.__esModule = true;
 exports.convert = exports.comma = void 0;
-function comma(number) {
+function comma(number, thecomma) {
     if (number === void 0) { number = 0; }
+    if (thecomma === void 0) { thecomma = ','; }
     if (number === 0)
         throw '❌ Error: Pass something.';
     try {
         if (typeof number !== 'number') {
             throw '❌ Error: Only numbers required.';
         }
-        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, thecomma);
     }
     catch (err) {
         console.error(err);
