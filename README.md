@@ -1,6 +1,3 @@
-# What is this ?
-
-Get perfeact shadows every time non-designer.
 
 # Installation
 
